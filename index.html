@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eremitt lysboks</title>
+    <meta property="og:description" content="Eremitt lysboks er en enkel, ren lysboks til bruk i Eremitts prosjekter." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto+Slab|UnifrakturCook:700" rel="stylesheet">
+    <script src="js/lysboks.min.js"></script>
+    <link rel="stylesheet" href="css/lysboks.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 20px;
+            font-family: 'Roboto Slab', serif;
+            background-color: #6A7169;
+            /*background-image: url(http://www.eremitt.net/images/krokstien%20lysere.jpg);*/
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+            margin-right: 1em;
+        }
+        article{
+            width: 800px;
+            max-width: 100%;
+            margin: 0 auto;
+            min-height: 100vh;
+            background: #C1C6C2;
+            padding: 10px 30px;
+        }
+        article>img{
+            width: 100%;
+        }
+
+        .bildegalleri{
+            columns: 3;
+        }
+        .bildegalleri img{
+            width: 100%;
+            margin-bottom: .5em;
+        }
+
+        pre{
+            background: #AAB1A9;
+            padding: 10px;
+            white-space: pre-wrap;
+        }
+        h1{
+            font-size: 2em;
+        }
+        h2{
+            font-size: 1.5em;
+        }
+        h3{
+            font-size: 1em;
+        }
+        li{
+            margin: 20px 0;
+        }
+        footer{
+            text-align: center;
+            margin-top: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1>Eremitt lysboks</h1>
+        <p>Eremitt lysboks er en enkel, ren lysboks til bruk i Eremitts prosjekter.</p>
+        <h2 id="krav">Krav</h2>
+        <p>Noenlunde moderne nettleser.</p>
+        <h2 id="funksjonalitet">Funksjonalitet</h2>
+        <p>Dette skripet tar alle bilder med link (alt som har formen &lt;a&gt;&lt;img&gt;&lt;&sol;a&gt;) og gjør sånn at linken åpnes i en lysboks istedenfor et nytt vindu.</p>
+        <h2 id="installasjon">Installasjon</h2>
+        <ul>
+            <li>Last ned <a href="js/lysboks.min.js">jquery.lysboks.min.js</a> eller <a href="js/lysboks.js">jquery.lysboks.js</a> til hvor enn du har alle skriptene dine og <a href="css/lysboks.min.css">jquery.lysboks.min.css</a> eller <a href="css/lysboks.css">jquery.lysboks.css</a> til hvor enn du har stilarkene dine.</li>
+            <li>
+                <p>Referer til dem i headeren din</p>
+                <pre>&lt;script src&equals;&quot;lysboks&period;min&period;js&quot;&gt;&lt;&sol;script&gt;&NewLine;&lt;link rel&equals;&quot;stylesheet&quot; href&equals;&quot;lysboks&period;css&quot;&gt;</pre>
+            </li>
+            <li>
+                <p>Legg dette på siden din et sted</p>
+                <pre>&lt;script&gt;&NewLine;    lysboks&lpar;&rpar;&semi;&NewLine;&lt;&sol;script&gt;</pre>
+            </li>
+            <li>Sett parameterene til hva enn du trenger at de skal være.</li>
+            <li>Rak inn pengene!</li>
+        </ul>
+        <h2 id="parametere">Parametere</h2>
+        <p>Det er foreløpig tre parametere som kan settes.</p>
+        <h3>Beholder</h3>
+        <p>Settes til en css-selektor til et element som inneholder bildene lysboksen skal virke på.</p>
+        <h3>Hastighet</h3>
+        <p>Hastigheten på animasjonene i millisekunder.</p>
+        <h3>Lukk</h3>
+        <p>Viser en lukk-knapp. Valgmulighetene er "ingen", bilde" eller "utenfor".</p>
+        <img src="img/ingen.png">
+        <img src="img/bilde.png">
+        <img src="img/utenfor.png">
+        <h3>Standardparametere</h3>
+        <pre>lysboks&lpar;&lcub;&NewLine;    &quot;beholder&quot;&colon; &quot;&period;bildegalleri&quot;&comma;&NewLine;    &quot;hastighet&quot;&colon; 200&comma;&NewLine;    &quot;lukk&quot;&colon; &quot;ingen&quot;&NewLine;&rcub;&rpar;&semi;</pre>
+        <h2 id="eksempel">Eksempel</h2>
+        <p>Dette er en haug med bilder i en div med klassen "bildegalleri". Trykk på ett av dem.</p>
+        
+        <div class="artist-bilder bildegalleri">
+            <a href="img/5641acb7bd1985bb47fe8c60e25749dd5e5b4ac6.jpg"><img src="img/5641acb7bd1985bb47fe8c60e25749dd5e5b4ac6.jpg" title="Värmlandsbukk"></a>
+            <a href="img/nara%2018.jpg"><img src="img/nara%2018.jpg" title="Värmlandsfår"></a>
+            <a href="img/59388568-8L5QA.jpg"> <img src="img/59388568-8L5QA.jpg"> </a>
+            <a href="img/41250894-2bTLG.jpg"><img src="img/41250894-2bTLG.jpg" title="Hund"></a>
+            <a href="img/140.jpg"><img src="img/140.jpg" title="Kattunge"></a>
+            <a href="img/Getterna1.jpg"><img src="img/Getterna1.jpg" title="Geiter"></a>
+            <a href="img/som1.jpg"><img src="img/som1.jpg" title="Värmlandsfår"></a>
+            <a href="img/som10.jpg"><img src="img/som10.jpg"></a>
+            <a href="img/som6.jpg"><img src="img/som6.jpg" title="Chill i solen!"></a>
+            <a href="img/som3.jpg"><img src="img/som3.jpg" title=""></a>
+            <a href="img/287%20(1).jpg"><img src="img/287%20(1).jpg"></a>
+            <a href="img/49323331-lV844.jpg"> <img src="img/49323331-lV844.jpg"></a>
+        </div>
+        <h2 id="forbedringer">Fremtidige forbedringer</h2>
+        <ul>
+            <li>Flere mulige parametere.</li>
+        </ul>
+        <footer>
+            <p>&copy; Eremitt 2017</p>
+        </footer>
+    </article>
+    <script>
+        lysboks({
+            "lukk": "bilde",
+            'hastighet': 500
+        });
+    </script>
+</body>
+</html>
