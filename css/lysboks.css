@@ -27,9 +27,6 @@
 }
 
 #lysboks *{
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 #lysboksMain{
@@ -81,13 +78,14 @@
     top: 10px;
     right: 10px;
     background-color:black;
-    opacity: 0.2;
     color: white;
     line-height: 0;
     padding: 7px;
+    border-radius: 3px;
+    opacity: 0.7;
 }
 #lysboksLukk:hover{
-    opacity: 0.7;
+    opacity: 1;
 }
 #lysboksLukk svg{
     fill:white;
@@ -102,7 +100,6 @@
     padding: 1vh 0.5vh;
     max-width:100vw;
     line-height: 0;
-    /* overflow-x:hidden; */
     display:flex;
     cursor: default;
     overflow: default;
@@ -118,4 +115,8 @@
 }
 #miniatyrBilder img{
     max-height:8vh;
+}
+
+.miniatyrBilde.selected{
+    opacity: 0.3;
 }
