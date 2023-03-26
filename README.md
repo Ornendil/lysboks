@@ -62,3 +62,7 @@ Viser en lukk-knapp. Valgmulighetene er "ingen", bilde" eller "utenfor".
         "hastighet": 200,
         "lukk": "ingen"
     });
+
+### Fremtidige forbedringer
+
+Flere mulige parametere.
