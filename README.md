@@ -46,9 +46,9 @@ Hastigheten på animasjonene i millisekunder.
 
 Viser en lukk-knapp. Valgmulighetene er "ingen", bilde" eller "utenfor".
 
-![ingen]https://github.com/Ornendil/lysboks/blob/master/img/ingen.png
-![bilde]https://github.com/Ornendil/lysboks/blob/master/img/bilde.png
-![utenfor]https://github.com/Ornendil/lysboks/blob/master/img/utenfor.png
+![ingen](https://github.com/Ornendil/lysboks/blob/master/img/ingen.png)
+![bilde](https://github.com/Ornendil/lysboks/blob/master/img/bilde.png)
+![utenfor](https://github.com/Ornendil/lysboks/blob/master/img/utenfor.png)
 
 ### Standardparametere
 
