@@ -8,7 +8,7 @@ Noenlunde moderne nettleser.
 
 ## Funksjonalitet
 
-Dette skripet tar alle bilder med link (alt som har formen <a><img></a>) og gjør sånn at linken åpnes i en lysboks istedenfor et nytt vindu.
+Dette skripet tar alle bilder med link (alt som har formen `<a><img></a>`) og gjør sånn at linken åpnes i en lysboks istedenfor et nytt vindu.
 
 ## Installasjon
 
